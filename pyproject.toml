@@ -4,7 +4,16 @@ version = "0.1.0"
 description = "Implementation of modern LLM architectures."
 readme = "README.md"
 requires-python = "==3.12.11"
-dependencies = []
+dependencies = [
+    "accelerate==1.14.0",
+    "comet-ml==3.58.4",
+    "datasets==5.0.0",
+    "einops==0.8.2",
+    "hydra-core==1.3.4",
+    "numpy==2.5.1",
+    "torch==2.13.0",
+    "transformers==5.14.1",
+]
 
 [dependency-groups]
 dev = [

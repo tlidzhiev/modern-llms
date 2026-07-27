@@ -1,0 +1,12 @@
+_target_: src.dataset.build_openwebtext
+dataset_name: ashaba1in/small_openwebtext
+max_seq_len: 1024
+tokenizer: mistralai
+save_dir: null # null uses data/<dataset>/<tokenizer>-<max_seq_len>
+force_rebuild: false # re-tokenize even if the packed dataset already exists
+limit: null # null or a number of blocks to keep
+shuffle: true
+seed: ${training_args.seed}
+val_size: 0 # 0 disables the split; a fraction (< 1) or a block count otherwise
+num_proc: null # null uses all but two CPU cores
+group_batch_size: 10000
